@@ -1,8 +1,9 @@
 quick start
 
 Dataset preparation
-nerf/Plenoxel: unzip dataset to ./nerf/data/nerf_llff_data
-3DGS:unzip dataset to ./gaus
+1.download dataset.zip from https://pan.baidu.com/share/init?surl=FMzmEYwuGLNl5EESUGzmvg
+2.nerf/Plenoxel: unzip dataset to ./nerf/data/nerf_llff_data
+3.3DGS:unzip dataset to ./gaus
 
 Training
 Nerf
