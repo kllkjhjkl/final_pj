@@ -1,0 +1,34 @@
+# 3D Gaussian Splatting配置文件 - Lego场景
+# 基于原NeRF配置修改
+
+# 实验设置
+expname = blender_lego_gaussian
+basedir = ./logs
+datadir = ./data/nerf_synthetic/lego
+
+# 数据集设置
+dataset_type = blender
+white_bkgd = True
+half_res = True
+testskip = 1
+
+# 3D Gaussian Splatting参数 (内存优化版本)
+num_gaussians = 25000  # 从100000大幅减少
+lrate = 0.001
+lrate_decay = 500
+
+# 渲染设置 (内存优化)
+chunk = 65536         # 从32768减少到8192
+render_factor = 0
+
+# 训练设置 (移除了NeRF特定参数)
+# 移除: no_batching, use_viewdirs, N_samples, N_importance, N_rand, precrop_iters, precrop_frac
+
+# 日志设置
+i_print = 100
+i_weights = 10000
+i_testset = 50000
+i_video = 5000
+
+# 其他设置
+no_reload = False
